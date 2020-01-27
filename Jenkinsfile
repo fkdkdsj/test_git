@@ -9,7 +9,7 @@ pipeline {
     stage('git') {
       steps {
         dir(path: '/home/ubuntu/git_jenkins') {
-          git(url: 'http://github.com/fkdkdsj/test_git/tree/master', credentialsId: 'dd0cb059-cb7e-410e-8290-1b2b30b68f3d')
+          git(url: 'http://github.com/fkdkdsj/test_git.git', credentialsId: 'dd0cb059-cb7e-410e-8290-1b2b30b68f3d')
         }
 
       }
